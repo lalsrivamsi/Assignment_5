@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="registration.css" />
+  <title>Register - Hotel Parking System</title>
+  <nav>
+    <a href="./index.html"><button class="HOME">HOME</button> </a>
+    <a href="./data.html"><button class="DATA">DATA</button> </a>
+    <a href="./about.html"><button class="ABOUT">ABOUT</button> </a>
+
+  </nav>
+</head>
+<body>
+  <div class="container">
+    <h1>Hotel Parking System - Register</h1>
+    <div class="form-container">
+      <h3>Create an Account</h3>
+      <form id="registration-form">
+        <div class="form-row">
+          <label for="reg-username">Username:</label>
+          <input type="text" id="reg-username" class="inputBox" placeholder="Enter Username" required />
+        </div>
+        <div class="form-row">
+          <label for="reg-password">Password:</label>
+          <input type="password" id="reg-password" class="inputBox" placeholder="Enter Password" required />
+        </div>
+        <div class="form-row">
+          <label for="reg-type">Account Type:</label>
+          <select id="reg-type" class="inputBox">
+            <option value="staff">Staff</option>
+            <option value="customer">Customer</option>
+          </select>
+        </div>
+        <input type="submit" value="Register" id="reg-submit" />
+      </form>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="register.js"></script>
+</body>
+</html>

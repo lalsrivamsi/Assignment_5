@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Hotel Parking System</title>
+</head>
+
+<body>
+  <h1>Hotel Parking System</h1>
+  
+  <div class="form-container">
+    <h3>Add Details</h3>
+    <form class="cf" id="cf">
+      <div class="form-row">
+        <label for="input-name">Name:</label>
+        <input type="text" class="inputBox" id="input-name" placeholder="Enter Name" />
+      </div>
+
+      <div class="form-row">
+        <label for="input-mobile">Mobile Number:</label>
+        <input type="tel" class="inputBox" id="input-mobile" placeholder="Enter Mobile Number" pattern="[0-9]{10}" />
+      </div>
+
+      <div class="form-row">
+        <label for="input-vname">Vehicle Company and Model:</label>
+        <input type="text" class="inputBox" id="input-vname" placeholder="Enter Vehicle company and model" />
+      </div>
+
+      <div class="form-row">
+        <label for="input-vcolor">Vehicle Color:</label>
+        <input type="text" class="inputBox" id="input-vcolor" placeholder="Enter Vehicle Color" />
+      </div>
+
+      <div class="form-row">
+        <label for="input-vnumber">Vehicle Number/ID:</label>
+        <input type="text" class="inputBox" id="input-vnumber" placeholder="Enter Vehicle/ID Number" />
+      </div>
+
+      <!-- Parking Slot Number -->
+      <div class="form-row">
+        <label for="input-pslot">Parking Slot Number:</label>
+        <input type="text" class="inputBox" id="input-pslot" placeholder="Enter Slot Number" />
+      </div>
+
+      <!-- Parking Floor -->
+      <div class="form-row">
+        <label for="input-floor">Parking Floor:</label>
+        <select class="inputBox" id="input-floor">
+          <option value="-1">Floor -1</option>
+          <option value="-2">Floor -2</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="input-entry">Entry Date:</label>
+        <input type="date" class="inputBox" id="input-entry" />
+      </div>
+
+      <div class="form-row">
+        <label for="input-entry-time">Entry Time:</label>
+        <input type="time" class="inputBox" id="input-entry-time" />
+      </div>
+
+      <div class="form-row">
+        <label for="input-exit">Exit Date:</label>
+        <input type="date" class="inputBox" id="input-exit" />
+      </div>
+
+      <!-- Vehicle Type -->
+      <div class="form-row">
+        <label for="input-vehicletype">Vehicle Type:</label>
+        <select class="inputBox" id="input-vehicletype">
+          <option value="2-wheeler">2 Wheeler</option>
+          <option value="3-wheeler">3 Wheeler</option>
+          <option value="4-wheeler">4 Wheeler</option>
+        </select>
+      </div>
+
+      <!-- User Photo Upload -->
+      <div class="form-row">
+        <label for="input-photo">Upload User Photo:</label>
+        <input type="file" class="inputBox" id="input-photo" accept="image/*" />
+      </div>
+
+      <div class="form-row">
+        <label for="input-type">User Type:</label>
+        <select class="inputBox" id="input-type">
+          <option value="staff">Staff</option>
+          <option value="customer">Customer</option>
+        </select>
+      </div>
+
+      <input type="submit" value="Submit" id="input-submit" />
+    </form>
+  </div>
+
+  <table class="styled-table">
+    <div class="search-bar">
+      <input type="text" name="search" id="searchInput" placeholder="Search" />
+    </div>
+    <thead>
+      <tr>
+        <th>Photo</th>
+        <th>Name</th>
+        <th>Mobile</th>
+        <th>Vehicle Company and Model</th>
+        <th>Vehicle Color</th>
+        <th>Vehicle Number/ID</th>
+        <th>Parking Slot</th>
+        <th>Floor</th>
+        <th>Entry Date</th>
+        <th>Entry Time</th>
+        <th>Exit Date</th>
+        <th>Duration</th>
+        <th>Vehicle Type</th>
+        <th>User Type</th>
+      </tr>
+    </thead>
+    <tbody id="datagohere">
+      <!-- Data will be inserted here dynamically -->
+    </tbody>
+  </table>
+
+  <div class="footer-container">
+    <footer>
+      <a>"Your vehicle, our priority. Safe and secure parking, every time."</a>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
